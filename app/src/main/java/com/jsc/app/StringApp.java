@@ -1,5 +1,16 @@
 package com.jsc.app;
 
+/**
+ * Imutable Object 
+ * ketika kita memanipulasi string, maka java akan
+ * membuat object string baru / tidak menimpa string
+ * yang lama.
+ *
+ * Note: Jika data sudah banyak, tidak di sarankan
+ * menggunakan string. Gunakan string buffer atau 
+ * string builder
+ * */
+
 public class StringApp {
   public static void main(String[] args) {
     String name = "Adi Cahya Saputra";
@@ -20,8 +31,14 @@ public class StringApp {
     System.out.println(name.startsWith("Adi"));
     System.out.println(name.endsWith("Saputra"));
 
-    System.out.println(" ".isBlank());
+    // System.out.println(" ".isBlank());
     System.out.println(" ".isEmpty());
     System.out.println("".isEmpty());
   }
 }
+
+
+
+
+
+
